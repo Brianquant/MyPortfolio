@@ -43,14 +43,20 @@ img {
 
     .nav-item {
         font-size: 1rem;
-    }
- 
 
+    }
 
     a {
         color: #fff;
        
     }
+   
+       
+
+    a:hover {
+        color: #61DAFB;
+    }
+    
 }
 
 header {
@@ -943,6 +949,12 @@ footer {
             .social-box {
                 display: flex;
                 justify-content: space-evenly;
+
+               a {
+                   i:hover {
+                       color: #61DAFB;
+                   }
+               }
             }
 
 

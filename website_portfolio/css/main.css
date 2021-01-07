@@ -41,6 +41,10 @@ img {
   color: #fff;
 }
 
+.nav-container a:hover {
+  color: #61DAFB;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -974,6 +978,9 @@ footer .credentials .author {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  .nav-container .social-header .social-box a i:hover {
+    color: #61DAFB;
   }
   .nav-container .social-header .icon-header {
     color: #fff;
