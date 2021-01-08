@@ -17,9 +17,9 @@
             <a href="index.html" class="logo">Brian Jay</a>
             <nav>
                 <ul class="nav-items">
-                    <li class="nav-item" alt="my education"><a href="#">Education</a></li>
-                    <li class="nav-item" alt="My work"><a href="#">Work</a></li>
-                    <li class="nav-item" alt="Hire me"><a href="#">Hire me</a></li>
+                    <li class="nav-item active" alt="my education"><a href="#education">Education</a></li>
+                    <li class="nav-item" alt="My work"><a href="#work">Work</a></li>
+                    <li class="nav-item" alt="Hire me"><a href="#hire">Hire me</a></li>
                 </ul>
             </nav>
         </header>
@@ -33,19 +33,8 @@
         </div>
     </div>
 
-    <script>
-        const currentLocation = location.href;
-        const menuItem = document.querySelectorAll('a');
-        const menuLength = menuItem.length;
-
-        for (let i = 0; i < menuLength; i++) {
-            if (menuItem[i].href === currentLocation) {
-                menuItem[i].className = "active";
-            }
-        }
 
 
-    </script>
 
     <div class="hero">
         <div class="content">
@@ -104,7 +93,7 @@
 
 
 
-    <section class="myEducation">
+    <section id="education" class="myEducation">
         <div class="content-container">
             <div class="title">
                 <h1>My Education</h1>
@@ -221,13 +210,13 @@
         </div>
     </section>
 
-    <section class="mywork">
+    <section id="work" class="mywork">
         <div class="content-container">
             <div class="title">
                 <h1>My Work</h1>
             </div>
             <div class="navigation-btn">
-                <a class="item-btn active" href="#" alt="b2b">Personal work</a>
+                <a class="item-btn" href="#" alt="b2b">Personal work</a>
                 <a class="item-btn" href="#" alt="Personal work">B2B</a>
             </div>
         </div>
@@ -292,7 +281,7 @@
         </div>
     </section>
 
-    <section class="hireMe">
+    <section id="hire" class="hireMe">
         <div class="content-container">
             <div class="title">
                 <h2>Hire me</h2>
@@ -300,31 +289,6 @@
             <div class="question">
                 <p> Have a question or want to work together?</p>
             </div>
-
-
-
-            <!-- <div class="window-container">
-                <div class="form-bar">
-                    <svg class="web_dots" xmlns="http://www.w3.org/2000/svg" width="27" height="5" viewBox="0 0 27 5">
-                        <circle id="Ellipse_7" data-name="Ellipse 7" cx="2.5" cy="2.5" r="2.5" fill="#fc6058" />
-                        <circle id="Ellipse_7-2" data-name="Ellipse 7" cx="2.5" cy="2.5" r="2.5"
-                            transform="translate(11)" fill="#fec02f" />
-                        <circle id="Ellipse_7-3" data-name="Ellipse 7" cx="2.5" cy="2.5" r="2.5"
-                            transform="translate(22)" fill="#2aca3e" />
-                    </svg>
-                </div>
-                <form method="POST" action="send.php">
-
-                    <input type="text" name="myName" placeholder="Name" class="form-control" />
-                    <input type="text" name="myEmail" placeholder="Email" class="form-control" />
-                    <textarea type="text" name="myMessage" placeholder="Your Message" class="form-control"></textarea>
-                    <div class="btn-container">
-                        <input type="submit" value="SUBMIT" class="btn-form" />
-                    </div>
-                </form>
-
-            </div> -->
-
             <div class="screen">
                 <div class="screen-header">
                     <div class="screen-header-left">
@@ -403,6 +367,30 @@
     </footer>
 
 </body>
+<!-- <script>
+    $(".nav-items a").on("click", function () {
+        $(".nav-items").find(".active").removeClass("active");
+        $(this).parent().addClass("active");
+    });
+
+</script> -->
+<!-- Smooth Scrolling -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
 
 <script src="./js/microInter.js"></script>
 
