@@ -52,8 +52,6 @@ img {
   -webkit-transform: scale(2);
           transform: scale(2);
   border-radius: 5px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .nav-container a {
@@ -1310,6 +1308,36 @@ footer .credentials .author {
   }
   .myEducation .profile-container #profile-img {
     width: 45%;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: translate(0px, -51px);
+            transform: translate(0px, -51px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(-20px, -51px);
+            transform: translate(-20px, -51px);
+    z-index: 5;
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    -webkit-transform: translate(0px, -51px);
+            transform: translate(0px, -51px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(-20px, -51px);
+            transform: translate(-20px, -51px);
+    z-index: 5;
   }
 }
 /*# sourceMappingURL=main.css.map */
