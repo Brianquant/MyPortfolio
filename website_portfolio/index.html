@@ -17,9 +17,11 @@
             <a href="index.html" class="logo">Brian Jay</a>
             <nav>
                 <ul class="nav-items">
-                    <li class="nav-item active" alt="my education"><a href="#education">Education</a></li>
-                    <li class="nav-item" alt="My work"><a href="#work">Work</a></li>
-                    <li class="nav-item" alt="Hire me"><a href="#hire">Hire me</a></li>
+                    <li class="nav-item active" alt="my education"><a data-page="education"
+                            href="#education">Education</a></li>
+                    <li class="nav-item" alt="My work"><a data-page="work" href="#work">Work</a></li>
+                    <li class="nav-item" alt="Hire me"><a data-page="hire" href="#hire">Hire me</a></li>
+                    <div class="bubble"></div>
                 </ul>
             </nav>
         </header>
@@ -93,7 +95,7 @@
 
 
 
-    <section id="education" class="myEducation">
+    <section data-index="0" id="education" class="myEducation">
         <div class="content-container">
             <div class="title">
                 <h1>My Education</h1>
@@ -210,7 +212,7 @@
         </div>
     </section>
 
-    <section id="work" class="mywork">
+    <section data-index="1" id="work" class="mywork">
         <div class="content-container">
             <div class="title">
                 <h1>My Work</h1>
@@ -281,7 +283,7 @@
         </div>
     </section>
 
-    <section id="hire" class="hireMe">
+    <section data-index="2" id="hire" class="hireMe">
         <div class="content-container">
             <div class="title">
                 <h2>Hire me</h2>
@@ -367,13 +369,6 @@
     </footer>
 
 </body>
-<!-- <script>
-    $(".nav-items a").on("click", function () {
-        $(".nav-items").find(".active").removeClass("active");
-        $(this).parent().addClass("active");
-    });
-
-</script> -->
 <!-- Smooth Scrolling -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
@@ -392,6 +387,6 @@
     });
 </script>
 
-<script src="./js/microInter.js"></script>
+<script type="text/javascript" src="./js/microInter.js"></script>
 
 </html>

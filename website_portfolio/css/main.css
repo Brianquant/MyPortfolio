@@ -42,6 +42,20 @@ img {
   font-size: 1rem;
 }
 
+.nav-container .bubble {
+  position: absolute;
+  z-index: -2;
+  background: -webkit-gradient(linear, left bottom, right top, from(#f46b45), to(#eea849));
+  background: linear-gradient(to right top, #f46b45, #eea849);
+  -webkit-box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.74);
+          box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.74);
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .nav-container a {
   color: #fff;
 }
