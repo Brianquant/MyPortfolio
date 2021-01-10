@@ -214,6 +214,11 @@ section {
   margin: 1em;
 }
 
+.myEducation .cards-container ul li .btn-explore:hover {
+  background: rgba(55, 84, 170, 0.6);
+  color: #fff;
+}
+
 .myEducation .cards-container ul li .icon-container {
   height: 100px;
   display: -webkit-box;
@@ -840,12 +845,24 @@ footer .social-container .social-card .flaticon-github {
   color: #fff;
 }
 
+footer .social-container .social-card .flaticon-github:hover {
+  color: #61DAFB;
+}
+
 footer .social-container .social-card .flaticon-outlook {
   color: #fff;
 }
 
+footer .social-container .social-card .flaticon-outlook:hover {
+  color: #61DAFB;
+}
+
 footer .social-container .social-card .flaticon-linked-in-logo-of-two-letters {
   color: #fff;
+}
+
+footer .social-container .social-card .flaticon-linked-in-logo-of-two-letters:hover {
+  color: #61DAFB;
 }
 
 footer .legal {
@@ -1127,6 +1144,9 @@ footer .credentials .author {
   .portfolio-container .project-container .project-specs a {
     font-size: 1.1rem !important;
     color: #000 !important;
+  }
+  .portfolio-container .project-container .project-specs a:hover {
+    color: #61DAFB !important;
   }
   .navigation-btn {
     -webkit-box-pack: space-evenly !important;

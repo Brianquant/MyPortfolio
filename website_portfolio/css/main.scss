@@ -228,6 +228,12 @@ section {
             margin: 1em;
         }
 
+        .btn-explore:hover {
+            background: rgba($color: #3754AA, $alpha: .6);
+            color: #fff;
+
+        }
+
         .icon-container {
             height: 100px;
             display: flex;
@@ -535,6 +541,10 @@ section {
             align-items: center;
             
 
+             
+
+            
+        
             .inner-stroke {
                 width: 15rem;
                 height: 10rem;
@@ -554,6 +564,7 @@ section {
             }
 
         }
+       
 
     }
 }
@@ -770,14 +781,25 @@ footer {
 
                 .flaticon-github {
                     color: #fff;
-                 
 
+                    &:hover {
+                        color: #61DAFB;
+                    }
+                 
                 }
                 .flaticon-outlook {
                     color: #fff;
+
+                    &:hover {
+                        color: #61DAFB;
+                    }
                 }
                 .flaticon-linked-in-logo-of-two-letters {
                     color: #fff;
+
+                    &:hover {
+                        color: #61DAFB;
+                    }
                 }
             
 
@@ -1137,6 +1159,12 @@ footer {
                 a {
                     font-size: 1.1rem !important;
                     color: #000 !important;
+
+                    &:hover {
+                        color: #61DAFB !important;
+                    }
+
+                   
                 }
 
 
