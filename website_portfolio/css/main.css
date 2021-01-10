@@ -35,7 +35,7 @@ img {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 3;
+  z-index: 5;
 }
 
 .nav-container .nav-item {
@@ -305,6 +305,13 @@ section {
   background: #FFFFFF;
   -webkit-box-shadow: 12px 12px 24px #8f8f8f,  -12px -12px 24px #ffffff;
           box-shadow: 12px 12px 24px #8f8f8f,  -12px -12px 24px #ffffff;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+.myEducation .profile-container #profile-img:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .myEducation .stats-container {
@@ -1315,6 +1322,12 @@ footer .credentials .author {
   animation: circleAnim 1s infinite alternate-reverse;
 }
 
+.pointer {
+  animation: fingerAnim 1s infinite alternate-reverse;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+
 @-webkit-keyframes circleAnim {
   from {
     -webkit-transform: translate(0px, -51px);
@@ -1338,6 +1351,32 @@ footer .credentials .author {
     -webkit-transform: translate(-20px, -51px);
             transform: translate(-20px, -51px);
     z-index: 5;
+  }
+}
+
+@-webkit-keyframes fingerAnim {
+  from {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    z-index: 4;
+  }
+  to {
+    -webkit-transform: translate(0px, 15px);
+            transform: translate(0px, 15px);
+    z-index: 4;
+  }
+}
+
+@keyframes fingerAnim {
+  from {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    z-index: 4;
+  }
+  to {
+    -webkit-transform: translate(0px, 15px);
+            transform: translate(0px, 15px);
+    z-index: 4;
   }
 }
 /*# sourceMappingURL=main.css.map */
