@@ -11,11 +11,11 @@ if (isset($_POST['submit'])) {
     $body = "You received an e-amil";
 
     $body .= "\r\n Name: " . $name;
-	$body .= "\r\n Email: " . $mail;
+	$body .= "\r\n Email: " . $mailFrom;
 	$body .= "\r\n Number: " . $number;
 	$body .= "\r\n Message: " . $message;
 
-    $headers 		= 'From: PHP Email Tutorial <support@myWebsite.com>' . "\r\n" .
+    $headers 		= 'From: '. $name . "\r\n" .
     				'Reply-To: support@myWebsite.com' . "\r\n" .
     				'X-Mailer: PHP/' . phpversion();
 
