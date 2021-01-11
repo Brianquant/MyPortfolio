@@ -316,30 +316,29 @@
                 </div>
                 <div class="screen-body">
                     <div class="screen-body-item">
-                        <form method="POST" action="send.php">
-                            <div class="app-form">
+                        <div class="app-form">
+                            <form action="send.php" method="POST">
                                 <div class="app-form-group">
-                                    <input type="text" name="MyName" class="app-form-control" placeholder="NAME">
+                                    <input type="text" name="name" class="app-form-control" placeholder="NAME">
                                 </div>
                                 <div class="app-form-group">
-                                    <input type="text" name="MyEmail" class="app-form-control" placeholder="EMAIL">
+                                    <input type="text" name="mail" class="app-form-control" placeholder="EMAIL">
                                 </div>
                                 <div class="app-form-group">
-                                    <input type="text" name="MyNumber" class="app-form-control"
-                                        placeholder="CONTACT NO">
+                                    <input type="text" name="number" class="app-form-control" placeholder="CONTACT NO">
                                 </div>
                                 <div class="app-form-group message">
-                                    <input type="text" name="MyMessage" class="app-form-control" placeholder="MESSAGE">
+                                    <input type="text" name="message" class="app-form-control" placeholder="MESSAGE">
                                 </div>
                                 <div class="app-form-group buttons">
                                     <!-- <button class="app-form-button">CANCEL</button> -->
-                                    <button type="submit" class="app-form-button">SEND</button>
+                                    <button name="submit" type="submit" class="app-form-button">SEND</button>
                                 </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 

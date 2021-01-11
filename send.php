@@ -1,23 +1,18 @@
 <?php
-	$userName 		= $_POST['MyName'];
-    $userEmail	 	= $_POST['MyEmail'];
-    $userNumber    = $_POST['MyNumber'];
-    $userMessage 		= $_POST['MyMessage'];
+
+if (isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $mailFrom = $_POST['mail'];
+    $number = $_POST['number'];
+    $message = $_POST['message'];
     
+    $mailTo = "reifferscheid.brian@outlook.com";
+    $headers = "From: ".$mailFrom;
+    $txt = "You received an e-amil from ".$name.".\n\n".$message;
 
-	$to 			= "reifferscheid.brian@outlook.com";
-	$subject 		= "Email from my website";
-    $body 			= "Information Submitted:";
-    
-   
+    mail($mailTo, $txt, $headers);
+    header("Location: index.php?mailsend");
+}
 
-	$body .= "\r\n Name: " . $userName;
-    $body .= "\r\n Email: " . $userEmail;
-    $body .= "\r\n Contact no: " . $userNumber;
-    $body .= "\r\n Message: " . $userMessage;
-
-    
-   
-
-	mail($to, $subject, $body);
+	
 ?>
