@@ -10,12 +10,9 @@ if (isset($_POST['submit'])) {
     $headers = "From: ".$mailFrom;
     $txt = "You received an e-amil";
 
-    $body .= "\r\n Name: " . $name;
-	$body .= "\r\n Email: " . $mail;
-	$body .= "\r\n Message: " . $message;
 
-    mail($mailTo, $txt, $headers, $body);
-    header("Location: index.html");
+    mail($mailTo, $txt, $headers);
+    header("Location:index.html#hire");
 }
 
 	
