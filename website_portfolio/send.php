@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
     				'X-Mailer: PHP/' . phpversion();
 
 
-    mail($mailTo, $txt, $headers);
+    mail($mailTo, $subject, $body, $headers);
     header("Location:index.html#hire");
 }
 
