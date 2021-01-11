@@ -124,10 +124,8 @@ header {
 
   .content {
       line-height: 3em;
-
-    //   #cv_indicator {
-    //       transform: translate(117.434 26) rotate(90) !important;
-    //   }
+      
+    
   }
 
   h1 {
@@ -869,6 +867,9 @@ footer {
     .app-title:after {
       display: none !important;
     }
+
+   
+
   }
   
   @media screen and (min-width: 600px) {
@@ -1020,6 +1021,7 @@ footer {
     header {
         padding: 2em 2em 2em 4em !important;
     }
+
     
 
     section {
@@ -1108,6 +1110,11 @@ footer {
                     color: #61DAFB;
                     font-size: 1.3rem;
 
+                }
+
+                .greeting-1 > .greeting {
+                    border-right: 0.2rem solid #fff;
+                    
                 }
                 .greeting-2 {
                     color: #E31B6D;
@@ -1353,7 +1360,25 @@ footer {
 
             .greeting-1 {
                 font-size: 1.5rem;
+                 
+
+                
             }
+            .greeting-1 > .greeting {
+                border-right: 0.2rem solid #fff;
+                
+            }
+
+            // @keyframes blink {
+            //     0% {
+            //         opacity: 0;
+            //     }
+
+            //     100% {
+            //         opacity: 1;
+            //     }
+            // }
+
             .greeting-2 {
                 font-size: 1.5rem;
             }

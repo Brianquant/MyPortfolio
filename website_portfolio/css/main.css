@@ -1099,6 +1099,9 @@ footer .credentials .author {
     color: #61DAFB;
     font-size: 1.3rem;
   }
+  .hero .content-graphic .editor-box .edit-item .greeting-1 > .greeting {
+    border-right: 0.2rem solid #fff;
+  }
   .hero .content-graphic .editor-box .edit-item .greeting-2 {
     color: #E31B6D;
     font-size: 1.3rem;
@@ -1273,6 +1276,9 @@ footer .credentials .author {
   }
   .hero .content-graphic .editor-box .edit-item .greeting-1 {
     font-size: 1.5rem;
+  }
+  .hero .content-graphic .editor-box .edit-item .greeting-1 > .greeting {
+    border-right: 0.2rem solid #fff;
   }
   .hero .content-graphic .editor-box .edit-item .greeting-2 {
     font-size: 1.5rem;
