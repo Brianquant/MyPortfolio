@@ -21,5 +21,5 @@
     'X-Mailer: PHP/' . phpversion();
    
 
-	mail($to, $subject, $body);
+	mail($to, $subject, $body, $headers);
 ?>
