@@ -1,11 +1,11 @@
 <?php
-	$userName 		= $_POST['myName'];
-    $userEmail	 	= $_POST['myEmail'];
-    $userNumber    = $_POST['myNumber'];
-    $userMessage 		= $_POST['myMessage'];
+	$userName 		= $_POST['MyName'];
+    $userEmail	 	= $_POST['MyEmail'];
+    $userNumber    = $_POST['MyNumber'];
+    $userMessage 		= $_POST['MyMessage'];
     
 
-	$to 			= "reifferscheid@brianstemplats.site";
+	$to 			= "reifferscheid.brian@outlook.com";
 	$subject 		= "Email from my website";
     $body 			= "Information Submitted:";
     
@@ -16,10 +16,8 @@
     $body .= "\r\n Contact no: " . $userNumber;
     $body .= "\r\n Message: " . $userMessage;
 
-    $headers 		= 'From: Brian Reifferscheid <support@brianstemplats.site>' . "\r\n" .
-    'Reply-To: support@mybrianstemplats.site' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+    
    
 
-	mail($to, $subject, $body, $headers);
+	mail($to, $subject, $body);
 ?>
