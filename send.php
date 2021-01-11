@@ -8,14 +8,13 @@ if (isset($_POST['submit'])) {
     
     $mailTo = "reifferscheid.brian@outlook.com";
     $headers = "From: ".$mailFrom;
-    $headers = "Name: ".$name;
-    $headers = "Number: ".$number;
-    $headers = "Message: ".$message;
     $txt = "You received an e-amil";
 
-    
+    $body .= "\r\n Name: " . $name;
+	$body .= "\r\n Email: " . $mail;
+	$body .= "\r\n Message: " . $message;
 
-    mail($mailTo, $txt, $headers);
+    mail($mailTo, $txt, $headers, $body);
     header("Location: index.php?mailsend");
 }
 
