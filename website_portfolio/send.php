@@ -15,10 +15,9 @@ if (isset($_POST['submit'])) {
 	$body .= "\r\n Number: " . $number;
 	$body .= "\r\n Message: " . $message;
 
-    $headers 		= 'From: '. $name . "\r\n" .
-    				'Reply-To: support@myWebsite.com' . "\r\n" .
-    				'X-Mailer: PHP/' . phpversion();
-
+    $headers 		= 'From: brianstemplats.site' . "\r\n" .
+                       'Reply-To: brianstemplats.site' . "\r\n" .
+                      'X-Mailer: PHP/' . phpversion();
 
     mail($mailTo, $subject, $body, $headers);
     header("Location:index.html#hire");
