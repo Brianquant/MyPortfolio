@@ -28,7 +28,7 @@ function typeEffect() {
 
     txtElement.innerHTML = `<p class=greeting>${txt}</p>`;
 
-    let typeSpeed = 200;
+    let typeSpeed = 180;
 
     if (isDeleting) {
         typeSpeed / 2;
