@@ -1165,6 +1165,9 @@ footer .credentials .author {
     color: #E31B6D;
     font-weight: 800;
   }
+  .portfolio-container .project-container .project-specs .tech {
+    font-weight: 700;
+  }
   .portfolio-container .project-container .project-specs a {
     font-size: 1.1rem !important;
     color: #000 !important;
