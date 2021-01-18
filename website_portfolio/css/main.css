@@ -305,7 +305,7 @@ section {
 }
 
 .myEducation .profile-container #profile-img {
-  width: 20rem;
+  width: 15rem;
   border-radius: 25px;
   background: #FFFFFF;
   -webkit-box-shadow: 12px 12px 24px #8f8f8f,  -12px -12px 24px #ffffff;
@@ -1009,7 +1009,7 @@ footer .credentials .author {
     padding: 1em 2em !important;
   }
   .myEducation .profile-container #profile-img {
-    width: 80%;
+    width: 55%;
   }
   .cards-container ul {
     -ms-grid-columns: 1fr 1fr !important;
@@ -1157,7 +1157,7 @@ footer .credentials .author {
     font-size: 1.3rem;
   }
   .myEducation .profile-container #profile-img {
-    width: 70%;
+    width: 50%;
   }
   .portfolio-container {
     -ms-grid-columns: auto !important;
