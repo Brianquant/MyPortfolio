@@ -89,7 +89,7 @@ header {
     .logo {
         color: $accent2;
         font-weight: 800;
-        font-size: 1.1rem; 
+        font-size: 1.5rem; 
         padding: 1em;
     }
 
@@ -112,6 +112,7 @@ header {
 
 .social-header, .content-graphic, .project-specs {
     display: none;
+    direction: ltr;
 }
 
 
@@ -1042,7 +1043,7 @@ footer {
             background: #282C34;
 
             .logo {
-                font-size: 1.2rem;
+                font-size: 1.6rem;
             }
 
             .nav-item {
@@ -1265,7 +1266,7 @@ footer {
 @media only screen and (min-width: 1250px) {
 
     .nav-container header .logo {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .nav-container header .nav-item {
@@ -1346,7 +1347,7 @@ footer {
 @media only screen and (min-width: 1500px) {
 
     .nav-container header .logo {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .nav-container header .nav-item {
@@ -1383,7 +1384,7 @@ footer {
 @media only screen and (min-width: 1550px) { 
 
     .nav-container header .logo {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .nav-container header .nav-item {
@@ -1468,7 +1469,7 @@ footer {
 @media only screen and (min-width: 1660px) {
 
     .nav-container header .logo {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .nav-container header .nav-item {

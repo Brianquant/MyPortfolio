@@ -78,7 +78,7 @@ header {
 header .logo {
   color: #E31B6D;
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   padding: 1em;
 }
 
@@ -99,6 +99,7 @@ header ul li a {
 
 .social-header, .content-graphic, .project-specs {
   display: none;
+  direction: ltr;
 }
 
 .hero {
@@ -1048,7 +1049,7 @@ footer .credentials .author {
     background: #282C34;
   }
   .nav-container header .logo {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
   .nav-container header .nav-item {
     font-size: 1.2rem;
@@ -1219,7 +1220,7 @@ footer .credentials .author {
 
 @media only screen and (min-width: 1250px) {
   .nav-container header .logo {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .nav-container header .nav-item {
     font-size: 1.4rem;
@@ -1275,7 +1276,7 @@ footer .credentials .author {
 
 @media only screen and (min-width: 1500px) {
   .nav-container header .logo {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .nav-container header .nav-item {
     font-size: 1.4rem;
@@ -1299,7 +1300,7 @@ footer .credentials .author {
 
 @media only screen and (min-width: 1550px) {
   .nav-container header .logo {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .nav-container header .nav-item {
     font-size: 1.4rem;
@@ -1343,7 +1344,7 @@ footer .credentials .author {
 
 @media only screen and (min-width: 1660px) {
   .nav-container header .logo {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .nav-container header .nav-item {
     font-size: 1.4rem;
