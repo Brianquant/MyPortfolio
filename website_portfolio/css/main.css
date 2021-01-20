@@ -78,7 +78,7 @@ header {
 header .logo {
   color: #E31B6D;
   font-weight: 800;
-  font-size: 1.2rem !important;
+  font-size: 1.1rem !important;
   padding: 1em;
 }
 
@@ -982,7 +982,7 @@ footer .credentials .author {
 
 @media only screen and (min-width: 800px) {
   .nav-container header .logo {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   .nav-container header .nav-item {
     font-size: 1.3rem;
@@ -1033,7 +1033,7 @@ footer .credentials .author {
 
 @media only screen and (min-width: 1050px) {
   .nav-container header .logo {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   .nav-container header .nav-item {
     font-size: 1.3rem;
