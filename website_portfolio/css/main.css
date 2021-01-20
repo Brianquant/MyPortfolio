@@ -1032,9 +1032,6 @@ footer .credentials .author {
 }
 
 @media only screen and (min-width: 1050px) {
-  .nav-container header .logo {
-    font-size: 1.2rem;
-  }
   .nav-container header .nav-item {
     font-size: 1.3rem;
   }
@@ -1049,7 +1046,7 @@ footer .credentials .author {
     background: #282C34;
   }
   .nav-container header .logo {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .nav-container header .nav-item {
     font-size: 1.2rem;
@@ -1220,7 +1217,7 @@ footer .credentials .author {
 
 @media only screen and (min-width: 1250px) {
   .nav-container header .logo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .nav-container header .nav-item {
     font-size: 1.4rem;
@@ -1276,7 +1273,7 @@ footer .credentials .author {
 
 @media only screen and (min-width: 1500px) {
   .nav-container header .logo {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .nav-container header .nav-item {
     font-size: 1.4rem;
@@ -1300,7 +1297,7 @@ footer .credentials .author {
 
 @media only screen and (min-width: 1550px) {
   .nav-container header .logo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .nav-container header .nav-item {
     font-size: 1.4rem;
@@ -1344,7 +1341,7 @@ footer .credentials .author {
 
 @media only screen and (min-width: 1660px) {
   .nav-container header .logo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .nav-container header .nav-item {
     font-size: 1.4rem;
