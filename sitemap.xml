@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://brianstemplats.site/</loc>
+  <lastmod>2021-02-16T08:10:26+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://brianstemplats.site/de.html</loc>
+  <lastmod>2021-02-16T08:11:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brianstemplats.site/index.html</loc>
+  <lastmod>2021-02-16T08:10:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brianstemplats.site/assets/personal_docs/cv_eng_port.pdf</loc>
+  <lastmod>2021-01-22T20:56:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brianstemplats.site/policy.html</loc>
+  <lastmod>2021-01-21T16:45:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brianstemplats.site/imprint.html</loc>
+  <lastmod>2021-01-21T16:45:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://brianstemplats.site/assets/personal_docs/cv_de_port.pdf</loc>
+  <lastmod>2021-01-22T20:56:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
