@@ -1,5 +1,5 @@
 User-Agent: *
-Dissallow: /imprint.html
-Dissallow: /policy.html
-Dissallow: /send.php
-Dissallow: /website_portfolio/imprint.html
+Dissallow: ./imprint.html
+Dissallow: ./policy.html
+Dissallow: ./send.php
+Dissallow: ./website_portfolio/imprint.html
