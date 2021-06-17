@@ -31,7 +31,7 @@ img {
 }
 
 .nav-container {
-  background: #20232A;
+  background: #20232a;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -59,7 +59,7 @@ img {
 }
 
 .nav-container a:hover {
-  color: #61DAFB;
+  color: #61dafb;
 }
 
 header {
@@ -76,7 +76,7 @@ header {
 }
 
 header .logo {
-  color: #E31B6D;
+  color: #e31b6d;
   font-weight: 800;
   font-size: 1.1rem;
   padding: 1em;
@@ -97,14 +97,39 @@ header ul li a {
   padding: 0 0.5em;
 }
 
-.social-header, .content-graphic, .project-specs {
+.social-header,
+.content-graphic,
+.project-specs {
   display: none;
   direction: ltr;
 }
 
+.flex-pop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-pop .pop-up-container {
+  width: 280px;
+  height: 320px;
+  background-color: blue;
+  border-radius: 15px;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+}
+
 .hero {
   width: 100%;
-  background: #282C34;
+  background: #282c34;
   display: -ms-grid;
   display: grid;
   text-align: center;
@@ -122,7 +147,7 @@ header ul li a {
 }
 
 .hero p {
-  color: #61DAFB;
+  color: #61dafb;
   font-size: 1.3rem;
 }
 
@@ -164,7 +189,7 @@ section {
 }
 
 .myEducation h1 {
-  color: #5A5A5A;
+  color: #5a5a5a;
   font-size: 2rem;
 }
 
@@ -188,7 +213,7 @@ section {
 }
 
 .myEducation .cards-container ul li .card-title {
-  color: #5A5A5A;
+  color: #5a5a5a;
   font-weight: 700;
   font-size: 1.1rem;
   padding-top: 20px;
@@ -308,9 +333,9 @@ section {
 .myEducation .profile-container #profile-img {
   width: 15rem;
   border-radius: 25px;
-  background: #FFFFFF;
-  -webkit-box-shadow: 12px 12px 24px #8f8f8f,  -12px -12px 24px #ffffff;
-          box-shadow: 12px 12px 24px #8f8f8f,  -12px -12px 24px #ffffff;
+  background: #ffffff;
+  -webkit-box-shadow: 12px 12px 24px #8f8f8f, -12px -12px 24px #ffffff;
+          box-shadow: 12px 12px 24px #8f8f8f, -12px -12px 24px #ffffff;
   -webkit-transition: all ease-in-out 250ms;
   transition: all ease-in-out 250ms;
 }
@@ -346,7 +371,7 @@ section {
   width: 315px;
   height: 30px;
   border-radius: 30px;
-  background: #E6E6E6;
+  background: #e6e6e6;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.8);
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.8);
 }
@@ -412,7 +437,7 @@ section {
   padding: 5px;
   border-radius: 3px;
   font-size: 0.8em;
-  color: #5A5A5A;
+  color: #5a5a5a;
   font-weight: 700;
 }
 
@@ -493,16 +518,16 @@ section {
   border-radius: 30px;
   width: 60px;
   height: 30px;
-  background: #E6E6E6;
-  -webkit-box-shadow: 6px 6px 15px #c4c4c4,  -6px -6px 15px #ffffff;
-          box-shadow: 6px 6px 15px #c4c4c4,  -6px -6px 15px #ffffff;
+  background: #e6e6e6;
+  -webkit-box-shadow: 6px 6px 15px #c4c4c4, -6px -6px 15px #ffffff;
+          box-shadow: 6px 6px 15px #c4c4c4, -6px -6px 15px #ffffff;
 }
 
 .myEducation .stats-container .bar-flex .inset .tag p {
   text-align: center;
   margin: 0 auto;
   padding: 5px;
-  color: #5A5A5A;
+  color: #5a5a5a;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -512,7 +537,7 @@ section {
 }
 
 .mywork h1 {
-  color: #5A5A5A;
+  color: #5a5a5a;
   padding-bottom: 1.5em;
   font-size: 2rem;
 }
@@ -534,7 +559,7 @@ section {
 }
 
 .mywork .navigation-btn a {
-  color: #20232A;
+  color: #20232a;
   font-size: 1.2rem;
   font-weight: 700;
   padding: 0.5rem;
@@ -614,7 +639,7 @@ section {
 }
 
 .hireMe {
-  background-color: #282C34;
+  background-color: #282c34;
 }
 
 .hireMe .content-container {
@@ -640,24 +665,25 @@ section {
 
 .hireMe .content-container .question {
   padding-bottom: 2em;
-  color: #61DAFB;
+  color: #61dafb;
   font-weight: 500;
   font-size: 0.8rem;
 }
 
-.hireMe .content-container input, .hireMe .content-container button {
+.hireMe .content-container input,
+.hireMe .content-container button {
   font-weight: 700;
   letter-spacing: 1.4px;
 }
 
 .hireMe .content-container .screen {
   position: relative;
-  background: #20232A;
+  background: #20232a;
   border-radius: 15px;
 }
 
 .hireMe .content-container .screen:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -697,15 +723,15 @@ section {
 }
 
 .hireMe .content-container .screen-header-button.close {
-  background: #FC6058;
+  background: #fc6058;
 }
 
 .hireMe .content-container .screen-header-button.maximize {
-  background: #FEC02F;
+  background: #fec02f;
 }
 
 .hireMe .content-container .screen-header-button.minimize {
-  background: #2ACA3E;
+  background: #2aca3e;
 }
 
 .hireMe .content-container .screen-header-right {
@@ -749,7 +775,7 @@ section {
 }
 
 .hireMe .content-container .app-title:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -787,8 +813,8 @@ section {
   color: #ddd;
   font-size: 14px;
   outline: none;
-  -webkit-transition: border-color .2s;
-  transition: border-color .2s;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
 }
 
 .hireMe .content-container .app-form-control::-webkit-input-placeholder {
@@ -814,7 +840,7 @@ section {
 .hireMe .content-container .app-form-button {
   background: none;
   border: none;
-  color: #E31B6D;
+  color: #e31b6d;
   font-size: 14px;
   cursor: pointer;
   outline: none;
@@ -825,7 +851,7 @@ section {
 }
 
 footer {
-  background-color: #20232A;
+  background-color: #20232a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -846,7 +872,7 @@ footer .social-container {
 footer .social-container .social-card {
   width: 35px;
   height: 35px;
-  background-color: #5A5A5A;
+  background-color: #5a5a5a;
   margin: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -864,7 +890,7 @@ footer .social-container .social-card .flaticon-github {
 }
 
 footer .social-container .social-card .flaticon-github:hover {
-  color: #61DAFB;
+  color: #61dafb;
 }
 
 footer .social-container .social-card .flaticon-outlook {
@@ -872,7 +898,7 @@ footer .social-container .social-card .flaticon-outlook {
 }
 
 footer .social-container .social-card .flaticon-outlook:hover {
-  color: #61DAFB;
+  color: #61dafb;
 }
 
 footer .social-container .social-card .flaticon-linked-in-logo-of-two-letters {
@@ -880,7 +906,7 @@ footer .social-container .social-card .flaticon-linked-in-logo-of-two-letters {
 }
 
 footer .social-container .social-card .flaticon-linked-in-logo-of-two-letters:hover {
-  color: #61DAFB;
+  color: #61dafb;
 }
 
 footer .legal {
@@ -890,7 +916,7 @@ footer .legal {
 
 footer .legal a {
   text-decoration: none;
-  color: #61DAFB;
+  color: #61dafb;
   font-weight: 300;
   font-size: 0.9rem;
 }
@@ -910,11 +936,12 @@ footer .credentials {
 }
 
 footer .credentials .author {
-  color: #8F9AA7;
+  color: #8f9aa7;
   font-size: 0.7rem;
 }
 
-.datenschutz, .imprint {
+.datenschutz,
+.imprint {
   text-align: left;
 }
 
@@ -929,12 +956,12 @@ footer .credentials .author {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-color: #20232A;
+  background-color: #20232a;
   border-bottom: 1px solid black;
 }
 
 .translation-container .trans-btn {
-  background-color: #282C34;
+  background-color: #282c34;
   width: 6rem;
   font-weight: 700;
   padding: 1em;
@@ -944,7 +971,7 @@ footer .credentials .author {
 
 .translation-container .trans-btn:hover {
   background-color: rgba(40, 44, 52, 0.7);
-  color: #61DAFB;
+  color: #61dafb;
 }
 
 @media screen and (max-width: 520px) {
@@ -1043,7 +1070,7 @@ footer .credentials .author {
     background: unset;
   }
   .nav-container header {
-    background: #282C34;
+    background: #282c34;
   }
   .nav-container header .logo {
     font-size: 1.4rem;
@@ -1054,7 +1081,7 @@ footer .credentials .author {
   .nav-container .social-header {
     padding: 3em 0 2em 0;
     display: block !important;
-    background-color: #20232A;
+    background-color: #20232a;
   }
   .nav-container .social-header .social-box {
     display: -webkit-box;
@@ -1065,7 +1092,7 @@ footer .credentials .author {
             justify-content: space-evenly;
   }
   .nav-container .social-header .social-box a i:hover {
-    color: #61DAFB;
+    color: #61dafb;
   }
   .nav-container .social-header .icon-header {
     color: #fff;
@@ -1088,7 +1115,7 @@ footer .credentials .author {
     padding: 0;
   }
   .hero .content {
-    background: #282C34;
+    background: #282c34;
     padding: 6em 8em 6em 4em;
     text-align: left;
   }
@@ -1101,7 +1128,7 @@ footer .credentials .author {
   }
   .hero .content-graphic {
     display: unset;
-    background: #20232A;
+    background: #20232a;
   }
   .hero .content-graphic .editor-box {
     width: 22rem;
@@ -1144,14 +1171,14 @@ footer .credentials .author {
     margin-right: -55%;
   }
   .hero .content-graphic .editor-box .edit-item .greeting-1 {
-    color: #61DAFB;
+    color: #61dafb;
     font-size: 1.3rem;
   }
   .hero .content-graphic .editor-box .edit-item .greeting-1 > .greeting {
     border-right: 0.2rem solid #fff;
   }
   .hero .content-graphic .editor-box .edit-item .greeting-2 {
-    color: #E31B6D;
+    color: #e31b6d;
     font-size: 1.3rem;
   }
   .myEducation .profile-container #profile-img {
@@ -1192,7 +1219,7 @@ footer .credentials .author {
   }
   .portfolio-container .project-container .project-specs .category {
     font-size: 1rem;
-    color: #E31B6D;
+    color: #e31b6d;
     font-weight: 800;
   }
   .portfolio-container .project-container .project-specs .tech {
@@ -1203,7 +1230,7 @@ footer .credentials .author {
     color: #000 !important;
   }
   .portfolio-container .project-container .project-specs a:hover {
-    color: #61DAFB !important;
+    color: #61dafb !important;
   }
   .navigation-btn {
     -webkit-box-pack: space-evenly !important;
