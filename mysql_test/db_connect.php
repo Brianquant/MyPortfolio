@@ -1,7 +1,7 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"></head></html>
 <?php 
 
-$con = mysqli_connect("185.224.138.144", "u439520744_Brian", "1234Test#1234", "u439520744_firma");
+$con = mysqli_connect("localhost", "u439520744_Brian", "1234Test#1234", "u439520744_firma");
 var_dump($con);
 
 // Check connection
