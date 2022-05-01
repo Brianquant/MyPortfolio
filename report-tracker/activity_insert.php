@@ -31,7 +31,7 @@ function table_exists($table) {
   $my_table_name = "reg_date";
   if(table_exists($table = $my_table_name)) {
 
-    $sql = "INSERT INTO `BS1styear` (activity, lernfeld)
+    $sql = "INSERT INTO `BS` (activity, lernfeld)
    VALUES ('$activity','$lernfeld')";
     if (mysqli_query($conn, $sql)) {
         echo "Insert Data created successfully";
@@ -53,7 +53,7 @@ function table_exists($table) {
             echo "Error creating table: " . mysqli_error($conn);
           }
 
-    $sql = "INSERT INTO `BSstyear` (activity, lernfeld)
+    $sql = "INSERT INTO `BS` (activity, lernfeld)
     VALUES ('$activity','$lernfeld')";
     if (mysqli_query($conn, $sql)) {
         echo "Insert Data created successfully";
