@@ -42,7 +42,7 @@ function table_exists($table) {
 
     $sql = "CREATE TABLE `BS` (
         `id` INT AUTO_INCREMENT NOT NULL,
-        `activity` VARCHAR(30) NOT NULL,
+        `activity` VARCHAR(126) NOT NULL,
         `lernfeld` VARCHAR(30) NOT NULL,
         `reg_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
         primary key (id)
