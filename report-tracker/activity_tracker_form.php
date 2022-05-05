@@ -6,7 +6,7 @@
     <title>Activity Tracker</title>
 </head>
 <body>
-<form action="./activity_tracker_form.php" method="post">
+<form action="./activity_insert.php" method="post">
         <p>Lernfeld <input type="text" name="lernfeld"></p>
         <p>Activity <input type="text" name="activity"></p>
         <p>Neue Table anlegen <input type="text" name="new_table"> 
