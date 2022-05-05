@@ -1,21 +1,20 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"></head></html>
+
 <?php 
 
 include "./functions.php";
-
-$conn = mysqli_connect("localhost", "u439520744_Brian", "1234Test#1234", "u439520744_firma");
-var_dump($con);
-
 
 $activity = $_POST["activity"];
 $lernfeld = $_POST["lernfeld"];
 $new_table = $_POST["new_table"];
 
+// Create connection
+$conn = mysqli_connect("localhost", "u439520744_Brian", "1234Test#1234", "u439520744_firma");
 
 // Check connection
 if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
+
 
   $my_table_name = "reg_date";
   if(table_exists($table = $my_table_name, $conn)) {
@@ -26,7 +25,7 @@ if (!$conn) {
     } else {
         echo "Error creating table: " . mysqli_error($conn);
     }
-  } else {;
+  } else {
 // ToDo: Check for two first chars BS (Table name Validator)
     $sql = "CREATE TABLE `$new_table` (
         `id` INT AUTO_INCREMENT NOT NULL,
@@ -50,9 +49,10 @@ if (!$conn) {
     }
   } 
 
+
 mysqli_close($conn);
 
 
 
+
 ?>
-</body></html>
