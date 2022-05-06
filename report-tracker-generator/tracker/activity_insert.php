@@ -1,14 +1,16 @@
 
 <?php 
 
-include "./functions.php";
+include "../functions.php";
 
 $activity = $_POST["activity"];
 $lernfeld = $_POST["lernfeld"];
 $new_table = $_POST["new_table"];
 
-// Create connection
-$conn = mysqli_connect("localhost", "u439520744_Brian", "1234Test#1234", "u439520744_firma");
+// Live Server Mysql connection
+// $conn = mysqli_connect("localhost", "u439520744_Brian", "1234Test#1234", "u439520744_firma");
+// Test Server Mysql connection
+$conn = mysqli_connect("localhost", "root", "", "work_log_report_db");
 
 // Check connection
 if (!$conn) {
