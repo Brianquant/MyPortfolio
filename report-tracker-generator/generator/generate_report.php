@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Report</title>
-  <script type="text/javascript" src="./generator.js" defer></script>
+  <!-- <script type="text/javascript" src="./generator.js" defer></script> -->
 </head>
-<body>
+<body class="container">
   
 <?php 
 
@@ -22,18 +22,22 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 } 
 
-$sql = "SELECT activity, lernfeld, reg_date FROM $selected_table";
-$result = mysqli_query($conn, $sql);
+$sql1 = "SELECT lernfeld FROM $selected_table";
+$result1 = mysqli_query($conn, $sql1);
 
-while($row = mysqli_fetch_assoc($result)) {
-    echo "<p class='lernfeld'>" . $row["lernfeld"]. ": " . $row["activity"] . "</p>";
+$sql2 = "SELECT activity FROM $selected_table";
+$result2 = mysqli_query($conn, $sql2);
+
+while($row1 = mysqli_fetch_assoc($result1) && $row2 = mysqli_fetch_assoc($result2)) {
+    echo "<p class='dataset'>". "<span class='lf'>" . $row1["lernfeld"] ?? 'default value' . ": " . "</span>" . $row2["activity"] . ", " . "</p>";
   }
+
 
 mysqli_close($conn);
 
-
-
 ?>
+
+
 
 </body>
 </html>
