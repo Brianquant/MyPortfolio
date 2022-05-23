@@ -16,7 +16,7 @@ $conn = mysqli_connect("localhost", "u439520744_Brian", "1234Test#1234", "u43952
 if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
-  if(table_exists($timestamp, $conn)) {
+  if(table_exists($new_table, $conn)) {
     insert_activity_into_table($new_table, $activity, $lernfeld, $conn); 
   } else {
 // ToDo: Check for two first chars BS (Table name Validator)
