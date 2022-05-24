@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
 
 <?php 
 
@@ -17,15 +25,22 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
   if(table_exists($new_table, $conn)) {
-    insert_activity_into_table($new_table, $activity, $lernfeld, $conn); 
+    insert_activity_into_table($new_table, $activity, $lernfeld, $conn) . "<br>"; 
   } else {
 // ToDo: Check for two first chars BS (Table name Validator)
-    create_new_table($new_table, $conn, $activity, $lernfeld);
+    create_new_table($new_table, $conn, $activity, $lernfeld) . "<br>";
   } 
+
+
 
 mysqli_close($conn);
 
 
-
-
 ?>
+
+<a href="https://brianstemplats.site/report-tracker-generator/tracker/activity_tracker_form.php">Back to Tracker</a>
+  
+</body>
+</html>
+
+
