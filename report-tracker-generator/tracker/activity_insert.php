@@ -16,9 +16,9 @@ $lernfeld = $_POST["lernfeld"];
 $new_table = $_POST["new_table"];
 
 // Live Server Mysql connection
-// $conn = mysqli_connect("localhost", "u439520744_Brian", "1234Test#1234", "u439520744_firma");
+$conn = mysqli_connect("localhost", "u439520744_Brian", "1234Test#1234", "u439520744_firma");
 // Test Server Mysql connection
-$conn = mysqli_connect("localhost", "root", "", "work_log_report_db");
+// $conn = mysqli_connect("localhost", "root", "", "work_log_report_db");
 
 // Check connection
 if (!$conn) {
