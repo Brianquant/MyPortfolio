@@ -27,14 +27,6 @@ function table_exists($table, $conn) {
           echo "Error creating table: " . mysqli_error($conn);
         }
 
-//   $sql = "INSERT INTO `$new_table` (activity, lernfeld)
-//   VALUES ('$activity','$lernfeld')";
-//   if (mysqli_query($conn, $sql)) {
-//       echo "Insert Data created successfully";
-//   } else {
-//       echo "Error creating table: " . mysqli_error($conn);
-//   }
-
 }
 
 
