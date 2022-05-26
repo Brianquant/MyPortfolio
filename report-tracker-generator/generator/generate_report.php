@@ -12,9 +12,9 @@
 $selected_table = $_POST["selected-table"];
 
 // Live Server Mysql connection
-$conn = mysqli_connect("localhost", "u439520744_Brian", "1234Test#1234", "u439520744_firma");
+// $conn = mysqli_connect("localhost", "u439520744_Brian", "1234Test#1234", "u439520744_firma");
 // Test Server Mysql connection
-// $conn = mysqli_connect("localhost", "root", "", "work_log_report_db");
+$conn = mysqli_connect("localhost", "root", "", "work_log_report_db");
 
 // Check connection
 if (!$conn) {
@@ -104,15 +104,16 @@ while($row = mysqli_fetch_assoc($result_en)) {
 }
 
 
-
-
-
-
 mysqli_close($conn);
 
 ?>
 
-
+<div style="margin-top: 20px;">
+  <!-- <a href="http://localhost:8080/ToolBox/MyPortfolio/report-tracker-generator/generator/report_form.html">Go to Report Generator</a> -->
+  <a href="https://brianstemplats.site/report-tracker-generator/generator/report_form.html">Go to Report Generator</a>
+  <a style="color: black;" href="https://brianstemplats.site/report-tracker-generator/tracker/activity_tracker_form.php">Go to tracker</a>
+  <!-- <a style="color: black;" target="_blank" href="http://localhost:8080/ToolBox/MyPortfolio/report-tracker-generator/tracker/activity_tracker_form.php">Go to tracker</a> -->
+</div>
 
 </body>
 </html>

@@ -13,6 +13,7 @@
     <input type="submit" value="Track activity">
 </form>
 <!-- ToDo: Change link if pushing to live -->
-<a href="http://localhost:8080/ToolBox/MyPortfolio/report-tracker-generator/generator/report_form.html">Go to Report Generator</a>
+<a href="https://brianstemplats.site/report-tracker-generator/generator/report_form.html">Go to Report Generator</a>
+<!-- <a href="http://localhost:8080/ToolBox/MyPortfolio/report-tracker-generator/generator/report_form.html">Go to Report Generator</a> -->
 </body>
 </html>
