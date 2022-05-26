@@ -2,6 +2,7 @@
 
 function abstractLFNumber() {
     const lernfeld = document.querySelectorAll(".lf");
+    console.log(lernfeld);
     // const datasets = document.querySelectorAll(".dataset");
     let newLfNum = [];
 
