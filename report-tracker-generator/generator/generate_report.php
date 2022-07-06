@@ -21,90 +21,46 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 } 
 
-$query_lf1 = "SELECT activity FROM $selected_table WHERE lernfeld='LF1'";
-$result_lf1 = mysqli_query($conn, $query_lf1);
+function render_lernfeld($lf, $conn, $selected_table) {
+  $query = "SELECT activity FROM $selected_table WHERE lernfeld='$lf'";
+  $sql_query = mysqli_query($conn, $query);
+  $result = null;
+  $result .= "<br><br><span><b>$lf:</b> ";
+  while($row = mysqli_fetch_assoc($sql_query)) {
+      $result .= $row["activity"] . ", " . "</span>";
+  }
 
+  return $result;
 
-echo "<span><b>LF1:</b> ";
-while($row = mysqli_fetch_assoc($result_lf1)) {
-  // var_dump($row);
-    echo $row["activity"] . ", " . "</span>";
 }
 
+$lf1 = render_lernfeld('LF1', $conn, $selected_table);  
+$lf2 = render_lernfeld('LF2', $conn, $selected_table);
+$lf3_tech = render_lernfeld('LF3-Tech', $conn, $selected_table); 
+$lf3_w = render_lernfeld('LF3W', $conn, $selected_table); 
+$lf4 = render_lernfeld('LF4', $conn, $selected_table); 
+$lf5 = render_lernfeld('LF5', $conn, $selected_table); 
+$wsk = render_lernfeld('WSK', $conn, $selected_table); 
+$en = render_lernfeld('Englisch', $conn, $selected_table); 
+$sport = render_lernfeld('Sport', $conn, $selected_table); 
 
-$query_lf2 = "SELECT activity FROM $selected_table WHERE lernfeld='LF2'";
-$result_lf2 = mysqli_query($conn, $query_lf2);
+function display_report($lf1, $lf2, $lf3_tech, $lf3_w,  $lf4, $lf5, $wsk, $en, $sport) {
 
+  $result = $lf1 . $lf2 .  $lf3_tech . $lf3_w . $lf4 . $lf5 . $wsk . $en . $sport;
 
-echo "<br><br><span><b>LF2:</b> ";
-while($row = mysqli_fetch_assoc($result_lf2)) {
-  // var_dump($row);
-    echo $row["activity"] . ", " . "</span>";
+  return $result;
+
 }
 
+// Display Report
 
-$query_lf3w = "SELECT activity FROM $selected_table WHERE lernfeld='LF3W'";
-$result_lf3w = mysqli_query($conn, $query_lf3w);
-
-
-echo "<br><br><span><b>LF3W:</b> ";
-while($row = mysqli_fetch_assoc($result_lf3w)) {
-  // var_dump($row);
-    echo $row["activity"] . ", " . "</span>";
-}
-
-$query_lf3_tech = "SELECT activity FROM $selected_table WHERE lernfeld='LF3-Tech'";
-$result_lf3_tech = mysqli_query($conn, $query_lf3_tech);
+echo display_report($lf1, $lf2, $lf3_tech, $lf3_w,  $lf4, $lf5, $wsk, $en, $sport);
 
 
-echo "<br><br><span><b>LF3-Tech:</b> ";
-while($row = mysqli_fetch_assoc($result_lf3_tech)) {
-  // var_dump($row);
-    echo $row["activity"] . ", " . "</span>";
-}
-
-$query_lf4 = "SELECT activity FROM $selected_table WHERE lernfeld='LF4'";
-$result_lf4 = mysqli_query($conn, $query_lf4);
+ 
 
 
-echo "<br><br><span><b>LF4:</b> ";
-while($row = mysqli_fetch_assoc($result_lf4)) {
-  // var_dump($row);
-    echo $row["activity"] . ", " . "</span>";
-}
 
-$query_lf5 = "SELECT activity FROM $selected_table WHERE lernfeld='LF5'";
-$result_lf5 = mysqli_query($conn, $query_lf5);
-
-
-echo "<br><br><span><b>LF5:</b> ";
-while($row = mysqli_fetch_assoc($result_lf5)) {
-  // var_dump($row);
-    echo $row["activity"] . ", " . "</span>";
-}
-
-$query_wsk = "SELECT activity FROM $selected_table WHERE lernfeld='WSK'";
-$result_wsk = mysqli_query($conn, $query_wsk);
-
-
-echo "<br><br><span><b>WSK:</b> ";
-while($row = mysqli_fetch_assoc($result_wsk)) {
-  // var_dump($row);
-    echo $row["activity"] . ", " . "</span>";
-}
-
-$query_en = "SELECT activity FROM $selected_table WHERE lernfeld='Englisch'";
-$result_en = mysqli_query($conn, $query_en);
-
-
-echo "<br><br><span><b>Englisch:</b> ";
-while($row = mysqli_fetch_assoc($result_en)) {
-  // var_dump($row);
-    echo $row["activity"] . ", " . "</span>";
-}
-
-
-mysqli_close($conn);
 
 ?>
 
