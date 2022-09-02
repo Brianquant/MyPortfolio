@@ -37,6 +37,7 @@ function render_lernfeld($lf, $conn, $selected_table) {
 $lf6 = render_lernfeld('LF06', $conn, $selected_table);  
 $lf7 = render_lernfeld('LF07', $conn, $selected_table); 
 $lf8 = render_lernfeld('LF08', $conn, $selected_table);
+$lf8w = render_lernfeld('LF08W', $conn, $selected_table);
 $lf9 = render_lernfeld('LF09', $conn, $selected_table); 
 $ol = render_lernfeld('OL', $conn, $selected_table); // Offene Lernstunde
 $wpf = render_lernfeld('WPF-LIN-1', $conn, $selected_table); 
@@ -44,9 +45,9 @@ $wsk = render_lernfeld('WSK', $conn, $selected_table);
 $en = render_lernfeld('Englisch', $conn, $selected_table); 
 $sport = render_lernfeld('Sport', $conn, $selected_table); 
 
-function display_report($lf6, $lf7, $lf8, $lf9,  $ol, $wpf, $wsk, $en, $sport) {
+function display_report($lf6, $lf7, $lf8, $lf8w, $lf9,  $ol, $wpf, $wsk, $en, $sport) {
 
-  $result = $lf6 . $lf7 .  $lf8 . $lf9 . $ol . $wpf . $wsk . $en . $sport;
+  $result = $lf6 . $lf7 .  $lf8 . $lf8w . $lf9 . $ol . $wpf . $wsk . $en . $sport;
 
   return $result;
 
