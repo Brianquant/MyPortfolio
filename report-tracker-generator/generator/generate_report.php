@@ -55,7 +55,7 @@ function display_report($lf6, $lf7, $lf8, $lf8w, $lf9,  $ol, $wpf, $wsk, $en, $s
 
 // Display Report
 
-echo display_report($lf6, $lf7, $lf8, $lf9,  $ol, $wpf, $wsk, $en, $sport);
+echo display_report($lf6, $lf7, $lf8, $lf8w, $lf9,  $ol, $wpf, $wsk, $en, $sport);
 
 
  
