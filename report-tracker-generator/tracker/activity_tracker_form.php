@@ -7,7 +7,18 @@
 </head>
 <body>
 <form action="./activity_insert.php" method="post">
-    <p>Lernfeld <input type="text" name="lernfeld"></p>
+    <label for="lernfeld">Lernfeld</label>
+    <select name="lernfeld" id="lf">
+        <option value="LF06">LF06</option>
+        <option value="LF07">LF07</option>
+        <option value="LF08">LF08</option>
+        <option value="LF09">LF09</option>
+        <option value="OL">OL</option>
+        <option value="WPF-LIN-1">WPF-LIN-1</option>
+        <option value="WSK">WSK</option>
+        <option value="LF09">Englisch</option>
+        <option value="Sport">Sport</option>
+    </select>
     <p>Activity <textarea type="text" name="activity"></textarea></p>
     <p>Neue Table anlegen <input type="text" name="new_table"> 
     <input type="submit" value="Track activity">
