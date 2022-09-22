@@ -30,6 +30,7 @@ function get_all_table_names($conn) {
         <option value="LF06">LF06</option>
         <option value="LF07">LF07</option>
         <option value="LF08">LF08</option>
+        <option value="LF08W">LF08W</option>
         <option value="LF09">LF09</option>
         <option value="OL">OL</option>
         <option value="WPF-LIN-1">WPF-LIN-1</option>
