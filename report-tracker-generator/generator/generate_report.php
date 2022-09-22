@@ -61,15 +61,11 @@ echo display_report($lf6, $lf7, $lf8, $lf8w, $lf9,  $ol, $wpf, $wsk, $en, $sport
  
 
 
-
-
 ?>
 
 <div style="margin-top: 20px;">
-  <!-- <a href="http://localhost:8080/ToolBox/MyPortfolio/report-tracker-generator/generator/report_form.php">Go to Report Generator</a> -->
-  <a href="https://brianstemplats.site/report-tracker-generator/generator/report_form.php">Go to Report Generator</a>
-  <a style="color: black;" href="https://brianstemplats.site/report-tracker-generator/tracker/activity_tracker_form.php">Go to tracker</a>
-  <!-- <a style="color: black;" target="_blank" href="http://localhost:8080/ToolBox/MyPortfolio/report-tracker-generator/tracker/activity_tracker_form.php">Go to tracker</a> -->
+<a href="../tracker/activity_tracker_form.php">Tracker</a>
+<a href="../generator/report_form.php">Generator</a>
 </div>
 
 </body>

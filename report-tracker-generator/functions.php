@@ -40,6 +40,15 @@ function table_exists($table, $conn) {
       }
   }
 
+  function get_all_table_names($conn) {
+    $query = "SHOW TABLES FROM `work_log_report_db`";
+    // $query = "SHOW TABLES FROM `u439520744_firma`";
+    $result = mysqli_query($conn, $query); // run the query and assign the result to $result
+    while($table = mysqli_fetch_array($result)) { // go through each row that was returned in $result
+        echo "<option value=\"$table[0]\" >" . $table[0] . "</option>";    // print the table that was returned on that row.
+    }
+}
+
 
 
 

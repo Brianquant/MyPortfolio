@@ -38,8 +38,8 @@ mysqli_close($conn);
 
 ?>
 
-<!-- <a href="http://localhost:8080/ToolBox/MyPortfolio/report-tracker-generator/tracker/activity_tracker_form.php">Back to Tracker</a> -->
-<a href="https://brianstemplats.site/report-tracker-generator/tracker/activity_tracker_form.php">Back to Tracker</a>
+<a href="./activity_tracker_form.php">Tracker</a>
+<a href="../generator/report_form.php">Generator</a>
   
 </body>
 </html>
