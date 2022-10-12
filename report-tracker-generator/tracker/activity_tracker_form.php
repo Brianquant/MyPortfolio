@@ -36,6 +36,7 @@ $conn = mysqli_connect("localhost", "u439520744_Brian", "1234Test#1234", "u43952
     <input type="submit" value="Track activity">
 </form>
 <a href="./activity_tracker_form.php">Tracker</a>
+<a href="../tracker/new_week_form.php">New Week</a>
 <a href="../generator/report_form.php">Generator</a>
 </body>
 </html>

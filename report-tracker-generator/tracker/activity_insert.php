@@ -39,6 +39,7 @@ mysqli_close($conn);
 ?>
 
 <a href="./activity_tracker_form.php">Tracker</a>
+<a href="../tracker/new_week_form.php">New Week</a>
 <a href="../generator/report_form.php">Generator</a>
   
 </body>

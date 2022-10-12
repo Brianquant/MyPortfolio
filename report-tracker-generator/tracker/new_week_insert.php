@@ -3,26 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report Form Generator</title>
+    <title>Create new week</title>
 </head>
 <body>
 
-<?php
+
+<?php 
 
 include "../functions.php";
 // $conn = mysqli_connect("localhost", "root", "", "work_log_report_db");
 $conn = mysqli_connect("localhost", "u439520744_Brian", "1234Test#1234", "u439520744_firma");
+$new_week = $_POST["new_week"];
+create_new_table($new_week, $conn);
 
 ?>
 
-<form action="./generate_report.php" method="POST">
-    <select name="selected-table" id="table">
-    <?php get_all_table_names($conn) ?>
-    </select>
-    <input type="submit" value="Generate Report">
-</form>
-<a href="../tracker/activity_tracker_form.php">Tracker</a>
+<a href="./activity_tracker_form.php">Tracker</a>
 <a href="../tracker/new_week_form.php">New Week</a>
 <a href="../generator/report_form.php">Generator</a>
 </body>
-</html>

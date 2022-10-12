@@ -1,4 +1,13 @@
 <?php 
+
+function myDump($input) {
+  print("<pre>");
+    print("<code>");
+      print_r($input);
+    print("</code>");
+  print("</pre>");
+
+}
 // function check if table exist
 function table_exists($table, $conn) {
     $table = mysqli_real_escape_string($conn, $table);
@@ -13,7 +22,7 @@ function table_exists($table, $conn) {
   }
 
 
-  function create_new_table($new_table, $conn, $activity, $lernfeld) {
+  function create_new_table($new_table, $conn) {
     $sql = "CREATE TABLE `$new_table` (
       `id` INT AUTO_INCREMENT NOT NULL,
       `activity` VARCHAR(256) NOT NULL,

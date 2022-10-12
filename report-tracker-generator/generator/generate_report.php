@@ -21,6 +21,7 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 } 
 
+
 function render_lernfeld($lf, $conn, $selected_table) {
   $query = "SELECT activity FROM $selected_table WHERE lernfeld='$lf'";
   $sql_query = mysqli_query($conn, $query);
@@ -65,6 +66,7 @@ echo display_report($lf6, $lf7, $lf8, $lf8w, $lf9,  $ol, $wpf, $wsk, $en, $sport
 
 <div style="margin-top: 20px;">
 <a href="../tracker/activity_tracker_form.php">Tracker</a>
+<a href="../tracker/new_week_form.php">New Week</a>
 <a href="../generator/report_form.php">Generator</a>
 </div>
 
