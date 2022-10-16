@@ -35,20 +35,19 @@ function render_lernfeld($lf, $conn, $selected_table) {
 
 }
 
-$lf6 = render_lernfeld('LF06', $conn, $selected_table);  
-$lf7 = render_lernfeld('LF07', $conn, $selected_table); 
-$lf8 = render_lernfeld('LF08', $conn, $selected_table);
-$lf8w = render_lernfeld('LF08W', $conn, $selected_table);
-$lf9 = render_lernfeld('LF09', $conn, $selected_table); 
-$ol = render_lernfeld('OL', $conn, $selected_table); // Offene Lernstunde
-$wpf = render_lernfeld('WPF-LIN-1', $conn, $selected_table); 
+$lf1 = render_lernfeld('LF1', $conn, $selected_table);  
+$lf2 = render_lernfeld('LF2', $conn, $selected_table); 
+$lf3_tech = render_lernfeld('LF3-Tech', $conn, $selected_table);
+$lf3_w = render_lernfeld('LF3W', $conn, $selected_table);
+$lf4 = render_lernfeld('LF4', $conn, $selected_table); 
+$lf5 = render_lernfeld('LF5', $conn, $selected_table); 
 $wsk = render_lernfeld('WSK', $conn, $selected_table); 
 $en = render_lernfeld('Englisch', $conn, $selected_table); 
 $sport = render_lernfeld('Sport', $conn, $selected_table); 
 
-function display_report($lf6, $lf7, $lf8, $lf8w, $lf9,  $ol, $wpf, $wsk, $en, $sport) {
+function display_report($lf1, $lf2, $lf3_tech, $lf3_w, $lf4,  $lf5, $wsk, $en, $sport) {
 
-  $result = $lf6 . $lf7 .  $lf8 . $lf8w . $lf9 . $ol . $wpf . $wsk . $en . $sport;
+  $result = $lf1 . $lf2 . $lf3_tech . $lf3_w . $lf4 . $lf5 . $wsk . $en . $sport;
 
   return $result;
 
@@ -56,7 +55,7 @@ function display_report($lf6, $lf7, $lf8, $lf8w, $lf9,  $ol, $wpf, $wsk, $en, $s
 
 // Display Report
 
-echo display_report($lf6, $lf7, $lf8, $lf8w, $lf9,  $ol, $wpf, $wsk, $en, $sport);
+echo display_report($lf1, $lf2, $lf3_tech, $lf3_w, $lf4,  $lf5, $wsk, $en, $sport);
 
 
  
@@ -68,8 +67,6 @@ echo display_report($lf6, $lf7, $lf8, $lf8w, $lf9,  $ol, $wpf, $wsk, $en, $sport
 <a href="../tracker/activity_tracker_form.php">Tracker</a>
 <a href="../tracker/new_week_form.php">New Week</a>
 <a href="../generator/report_form.php">Generator</a>
-<a href="../generator/generate_old_form.php">Old Generator</a>
-
 </div>
 
 </body>
