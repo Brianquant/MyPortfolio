@@ -25,7 +25,7 @@ $conn = mysqli_connect("localhost", "u439520744_Brian", "1234Test#1234", "u43952
         <option value="OL">OL</option>
         <option value="WPF-LIN-1">WPF-LIN-1</option>
         <option value="WSK">WSK</option>
-        <option value="LF09">Englisch</option>
+        <option value="Englisch">Englisch</option>
         <option value="Sport">Sport</option>
     </select>
     <p>Activity <textarea type="text" name="activity"></textarea></p>
