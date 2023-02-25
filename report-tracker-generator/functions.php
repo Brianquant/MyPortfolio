@@ -3,10 +3,9 @@
 function myDump($input) {
   print("<pre>");
     print("<code>");
-      print_r($input);
+      var_dump($input);
     print("</code>");
   print("</pre>");
-
 }
 // function check if table exist
 function table_exists($table, $conn) {
